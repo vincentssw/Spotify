@@ -1,0 +1,153 @@
+body {
+    margin:0px;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    color:white;
+}
+
+nav {
+    height:80px;
+    background-color:black;
+
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.nav-item{
+    padding:28px 17px;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color:white;
+}
+
+a:hover {
+    color:#1ed760;
+}
+
+main {
+    height:969px;
+    background-color: rgb(41, 65, 171);
+    height:80vh;
+    color:#1ed760;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    background-image: url(https://www-growth.scdn.co/static/home/bursts.svg);
+    background-size: 175%;
+    background-position: 46% 4%;
+}
+
+
+.headline {
+    font-size : 146px;
+    font-weight:900;
+    position :relative;
+    left :256px;
+    padding-bottom:40px;
+}
+
+.headline-first {
+    position:relative;
+    left: -2.5em;  
+    /* em은 font size 기준 -> 모바일 버전에서 size 변화에 맞춰 바껴서 좋음음 */
+}
+
+.sub-headline{
+    text-align:center;
+    font-size:18px;
+    padding-bottom:40px;
+}
+
+.button-area{
+    text-align:center;
+}
+
+.button-style {
+    background-color: #1ed760;
+    color: rgb(41, 65, 171);
+    border-radius:500px;
+    border:none;
+    padding:14px 32px;
+    width:200px;
+    font-weight:750;
+}
+
+.button-style:hover{
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: black;
+    color:white;
+    display:flex;
+    justify-content:center;
+}
+
+.main-footer {
+    max-width:1170px;
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    height:250px;
+}
+
+.first-footer{
+    width:60%;
+    display:flex;
+    flex-direction:row;
+    align-content: space-around;
+}
+
+.second-footer{
+    width:40%;
+    display:flex;
+    justify-content:flex-end;
+    padding-top:30px;
+    padding-right:100px;
+
+}
+
+.column{
+    padding-top: 30px;
+    padding-left:40px;
+
+}
+
+.column-name{
+    color:darkgray;
+    font-weight:700;
+
+}
+
+.column-item{
+    padding-top: 30px;
+}
+
+.sns {
+    width : 50px;
+    height : 50px;
+    background-color: #222322;
+    border-radius:50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sns:hover{
+    color:#2de26d;
+}
+
+.sns-area{
+    padding-left:20px;
+}
+
+/* px : 절대적인 값임, 다른값이 영항을 받지 않음
+em: 상위요소 폰트크기 기준이다. 폰트가 12px이면 1em 은 12px. 화면사이즈에따라 반응형웹을 만들때 쓰기 좋다 
+rem: em이랑 비슷함 But, html태그(root)의 폰트크기 기준이다. 내자신이 12px이더라도 html이 20px이면 1rem 은 20px 
+% : 상위요소크기 기준으로 % 따짐
+ */
